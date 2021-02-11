@@ -1,0 +1,5 @@
+package com.cts.price.entity;
+
+public class Product {
+
+}
