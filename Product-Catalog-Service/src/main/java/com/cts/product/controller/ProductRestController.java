@@ -52,15 +52,15 @@ public class ProductRestController {
 	// Saving single Product
 	@PostMapping("/products")
 	public Product saveSingleProduct(@RequestBody Product product) {
-		service.saveProducts(product);
-		return product;
+		return service.saveProducts(product);
+
 	}
 
 	// Saving Multiple Product in one Transaction
 	@PostMapping("/products/all")
 	public List<Product> saveAllProduct(@RequestBody List<Product> products) {
-		service.saveAllProducts(products);
-		return products;
+		return service.saveAllProducts(products);
+
 	}
 
 	// Saving Review

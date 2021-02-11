@@ -36,9 +36,9 @@ public class OrderController {
 		order.setAmount(amount);
 		order.setUser(user);
 		order.setDate(LocalDateTime.now());
-//		for (Cart cartDelete : cart) {
-//			proxy.delteById(cartDelete.getItem().getId());
-//		}
+		for (Cart cartDelete : cart) {
+			proxy.delteById(cartDelete.getCartId());
+		}
 
 		return orderRepository.save(order);
 

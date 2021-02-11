@@ -12,7 +12,7 @@ public class Product {
 	private int id;
 	private String name;
 	private double price;
-	private String description;
+	//private String description;
 
 	public int getId() {
 		return id;
@@ -38,20 +38,20 @@ public class Product {
 		this.price = price;
 	}
 
-	public String getDescription() {
-		return description;
-	}
+//	public String getDescription() {
+//		return description;
+//	}
+//
+//	public void setDescription(String description) {
+//		this.description = description;
+//	}
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public Product(int id, String name, double price, String description) {
+	public Product(int id, String name, double price) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
-		this.description = description;
+		//this.description = description;
 	}
 
 	public Product() {

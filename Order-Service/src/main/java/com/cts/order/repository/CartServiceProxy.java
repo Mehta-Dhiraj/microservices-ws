@@ -14,7 +14,7 @@ public interface CartServiceProxy {
 	@GetMapping("/{user}")
 	public List<Cart> findItemByName(@PathVariable String user);
 
-	@GetMapping("/delete")
-	public void delteById(int id);
+	@GetMapping("/delete/{id}")
+	public void delteById(@PathVariable int id);
 
 }
