@@ -1,6 +1,0 @@
-server.port=8888
-spring.cloud.config.server.git.uri=https://github.com/Mehta-Dhiraj/cts.git
-management.security.enabled=false
-spring.application.name=spring-config-server-app
-management.endpoints.web.exposure.include=*
-

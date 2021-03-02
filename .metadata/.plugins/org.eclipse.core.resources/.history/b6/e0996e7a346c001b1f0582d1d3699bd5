@@ -1,5 +1,0 @@
-package com.cts.price.repository;
-
-public interface ProductCatalogProxy {
-
-}

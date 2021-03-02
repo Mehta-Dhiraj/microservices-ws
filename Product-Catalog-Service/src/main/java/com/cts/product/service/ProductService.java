@@ -15,15 +15,14 @@ public class ProductService {
 	ProductRepository productRepository;
 
 	public Product saveProducts(Product product) {
-		productRepository.save(new Product(product.getName(), product.getPrice(), product.getDescription()));
-		return product;
+		return productRepository.save(new Product(product.getName(), product.getPrice(), product.getDescription()));
+
 	}
 
 	public List<Product> saveAllProducts(List<Product> products) {
-		for (Product product : products) {
-			productRepository.save(new Product(product.getName(), product.getPrice(), product.getDescription()));
-		}
-		return products;
+
+		return productRepository.saveAll(products);
+
 	}
 
 }
